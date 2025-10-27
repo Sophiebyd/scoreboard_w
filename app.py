@@ -1,18 +1,4 @@
-import os
-from dotenv import load_dotenv
-from pymongo import MongoClient
 import customtkinter as ctk
-
-# Charger le .env
-load_dotenv()
-mongo_url = os.getenv("MONGO_URL")  # récupère l'URL de connexion
-
-# Connexion à MongoDB Atlas
-client = MongoClient(mongo_url)
-
-# Sélection de la DB et de la collection
-db = client["Waterpolo"]  # le nom de ta base
-collection = db["Score"]  # le nom de ta collection
 
 # --- Configuration interface ---
 ctk.set_appearance_mode("dark")
