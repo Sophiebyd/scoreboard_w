@@ -1,0 +1,10 @@
+customtkinter
+darkdetect
+dnspython
+packaging
+nodejs
+optional-django
+PyQt5
+PyQt5-Qt5
+PyQt5_sip
+setuptools
