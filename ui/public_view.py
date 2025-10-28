@@ -1,8 +1,7 @@
 from PyQt5.QtWidgets import QWidget, QLabel, QVBoxLayout, QGridLayout
 from PyQt5.QtCore import Qt
-from settings import *
 
-class DisplayWindow(QWidget):
+class PublicView(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Affichage Water-Polo")

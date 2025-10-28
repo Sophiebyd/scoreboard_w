@@ -1,9 +1,7 @@
 from PyQt5.QtWidgets import QWidget, QLabel, QVBoxLayout, QGridLayout, QPushButton
 from PyQt5.QtCore import Qt
-from settings import *
-from fault_button import FaultButton
 
-class ControlWindow(QWidget):
+class RefereeView(QWidget):
     def __init__(self, display):
         super().__init__()
         self.display = display

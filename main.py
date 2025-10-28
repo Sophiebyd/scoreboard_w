@@ -1,17 +1,17 @@
 import sys
 from PyQt5.QtWidgets import QApplication
-from ui.ui_display import DisplayWindow
-from ui.ui_control import ControlWindow
+from ui.public_view import PublicView
+from ui.referee_view import RefereeView
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 
-    # Fenêtre d'affichage
-    display = DisplayWindow()
+    # Fenêtre de 
+    display = PublicView()
     display.show()
 
-    # Fenêtre de contrôle
-    control = ControlWindow(display)
+    # Fenêtre de arbitre_view
+    control = RefereeView(display)
     control.show()
 
     sys.exit(app.exec())
