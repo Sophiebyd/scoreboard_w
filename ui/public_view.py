@@ -1,5 +1,6 @@
 from PyQt5.QtWidgets import QWidget, QLabel, QVBoxLayout, QGridLayout
 from PyQt5.QtCore import Qt
+from components.chrono import ChronoWidget
 
 class PublicView(QWidget):
     def __init__(self):
@@ -68,10 +69,12 @@ class PublicView(QWidget):
         main.addWidget(self.lbl_periode, 1, 3, 1, 2, Qt.AlignCenter)
 
         # Chrono
-        self.lbl_chrono = QLabel("08:00")
-        self.lbl_chrono.setFont(FONT_CHRONO)
-        self.lbl_chrono.setStyleSheet("color:red")
-        main.addWidget(self.lbl_chrono, 2, 2, 2, 4, Qt.AlignCenter)
+        self.chrono = ChronoWidget(minutes=8, seconds=0, font=FONT_CHRONO, color="red")
+        main.addWidget(self.chrono, 2, 2, 2, 4, Qt.AlignCenter)
+        #self.lbl_chrono = QLabel("08:00")
+        #self.lbl_chrono.setFont(FONT_CHRONO)
+        #self.lbl_chrono.setStyleSheet("color:red")
+        #main.addWidget(self.lbl_chrono, 2, 2, 2, 4, Qt.AlignCenter)
 
         # Possession
         self.lbl_control = QLabel("28")
