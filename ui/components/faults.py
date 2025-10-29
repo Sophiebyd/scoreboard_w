@@ -3,6 +3,7 @@ from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QSpacerItem, QSizePolicy
 from tkinter import Canvas
 import ttkbootstrap as ttk
+from cercle import CercleWidget
 
 class FaultsWidget(QWidget):
     def __init__(self):
@@ -29,11 +30,7 @@ class FaultsWidget(QWidget):
 
             # Les trois ronds de faute
             for f in range(3):
-                rond = Canvas(self, width=26, height=26, bg="black", highlightthickness=0)
-                rond.create_oval(2, 2, 24, 24, outline="blue", width=3)
-                rond.grid(row=row, column=col+f+1, padx=2, pady=3)
-                rond.setFont(font_round)
-                rond.setStyleSheet("color:blue;")
+                rond = CercleWidget(couleur="blue")
                 grid.addWidget(rond, row, col+f+1)
 
         self.setLayout(grid)
