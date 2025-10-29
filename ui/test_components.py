@@ -1,12 +1,15 @@
 import sys
 from PyQt5.QtWidgets import QApplication
 #from components.chrono import ChronoWidget
-from components.time_possession import TimePossessionWidget
+#from components.time_possession import TimePossessionWidget
+from components.faults import FaultsWidget
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     #chrono = ChronoWidget()
     #chrono.show()
-    tp = TimePossessionWidget()
-    tp.show()
+    #tp = TimePossessionWidget()
+    #tp.show()
+    F = FaultsWidget()
+    F.show()
     sys.exit(app.exec_())
