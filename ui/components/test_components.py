@@ -1,9 +1,10 @@
 import sys
 from PyQt5.QtWidgets import QApplication
-#from components.chrono import ChronoWidget
-#from components.time_possession import TimePossessionWidget
-#from components.faults import FaultsWidget
-from components.score import ScoreWidget
+#from time_possession import TimePossessionWidget
+#from faults import FaultsWidget
+#from score import ScoreWidget
+#from chrono import ChronoWidget
+from period import PeriodeWidget
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
@@ -13,6 +14,8 @@ if __name__ == "__main__":
     #tp.show()
     #F = FaultsWidget()
     #F.show()
-    S = ScoreWidget()
-    S.show()
+    #S = ScoreWidget()
+    #S.show()
+    P = PeriodeWidget()
+    P.show()
     sys.exit(app.exec_())

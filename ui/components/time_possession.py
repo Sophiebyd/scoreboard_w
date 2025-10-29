@@ -15,7 +15,7 @@ class TimePossessionWidget(QWidget):
         # Couleur du component complet
         self.setStyleSheet("background-color: black;")
         # Couleur du texte et de l'arrière plan du label
-        self.lbl.setStyleSheet("color: orange; background-color: black;")
+        self.lbl.setStyleSheet("color:#ffc000; background-color: black;")
         # Taille police
         font = QFont("Arial Black", 72)
         self.lbl.setFont(font)
