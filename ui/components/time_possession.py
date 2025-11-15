@@ -6,7 +6,7 @@ class TimePossessionWidget(QWidget):
     def __init__(self):
         super().__init__()
         # Temps de la possession (par défaut ici 12 secondes, adapter pour 30 ou 20 selon règles)
-        self.sec = 12
+        self.sec = 28
         # Dixième de seconde (utilisé uniquement sous les 10s)
         self.dix = 0
         # Mode d'affichage : False = secondes, True = dixièmes

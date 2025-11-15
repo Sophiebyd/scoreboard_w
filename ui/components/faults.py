@@ -3,7 +3,7 @@ from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QSpacerItem, QSizePolicy
 from tkinter import Canvas
 import ttkbootstrap as ttk
-from cercle import CercleWidget
+from .cercle import CercleWidget
 
 class FaultsWidget(QWidget):
     def __init__(self):

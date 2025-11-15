@@ -5,8 +5,8 @@ from PyQt5.QtGui import QFont
 class ChronoWidget(QWidget):
     def __init__(self):
         super().__init__()
-        self.min = 1
-        self.sec = 5
+        self.min = 8
+        self.sec = 0
         self.dix = 0
         self.mode_dixieme = False
 
