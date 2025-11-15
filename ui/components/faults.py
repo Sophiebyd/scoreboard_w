@@ -30,7 +30,7 @@ class FaultsWidget(QWidget):
 
             # Les trois ronds de faute
             for f in range(3):
-                rond = CercleWidget(couleur="blue")
+                rond = CercleWidget(couleur="orange")
                 grid.addWidget(rond, row, col+f+1)
 
         self.setLayout(grid)
